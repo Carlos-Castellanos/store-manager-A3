@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* head area */
+.site-init {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    background-color: rgb(15, 57, 63);
+    color: white;
+}
+
+.site-init h1 {
+    font-weight: 300;
+}
+
+.nav-menu{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.nav-menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+.nav-menu li{
+    margin: 0 4rem 0 0;
+    opacity: .4;
+    transition: all 0.4s ease; 
+}
+.nav-menu li:hover{
+ opacity: .7;
+font-size: 3rem; /*effect down item */
+
+}
+
+.nav-menu li:active{
+    opacity: 1;
+}
+
+.nav-menu li:last-child{
+margin-right: 0
+}
+.nav-menu a{
+    /* font-size: 1.8rem; */
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: .8rem;
+
+}
+ /* main area */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    overflow: auto;
+}
+
+#registerMain{
+    height: 77vh; 
+    overflow-wrap: normal;
+}
+
+#userMain{
+    height: auto;
+    background-image: url("https://www.teahub.io/photos/full/17-174123_green-light-texture-light-green-light-background-texture.jpg");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#userMain h1{
+font-size: 2rem;
+}
+#userMain h2{
+    font-size: 1rem;
+}
+/* #userMain #usersTable{
+    align-items: center;
+    background-image: url("https://www.teahub.io/photos/full/17-174123_green-light-texture-light-green-light-background-texture.jpg");
+} */
+
+main .back{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content;
+    width: 60rem;
+    background-image: url("https://www.teahub.io/photos/full/188-1887554_hp-windows-7-logon-background.jpg");
+}
+
+main .back h2{
+    color: white;
+    font-size: 4rem;
+    margin-left: 30px;
+}
+
+main .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 226, 247);
+    height: 15rem;
+    width: 30rem;
+    margin-left: 10px;
+
+}
+
+/* registercontainer */
+.site-register {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 13vh;
+    background-color: rgb(15, 57, 63);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 226, 247);
+    /* height: 40rem; */
+    width: 20rem;
+    font-size: .5rem;
+   
+}
+
+#txtColor,
+#btnRegister{
+    width: 12.5rem;  
+}
+.inputArea{
+    width: 15rem;
+    padding: 1px;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+
+}
+
+.input-error{
+    border:1px solid red;
+}
+#errorEmail,
+#errorLName,
+#errorFName,
+#errorPass{
+    color: red;
+    font-size: 1rem;
+}
+/* user.html table */
+#tbody-users{
+    color: black;
+}
+#tbody-users td{
+    border-width: 1px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    main .back{
+    justify-content: center;
+    width: 27rem;
+    height: max-content;
+    border-radius: 0%;
+    }
+    main .back h2{
+        color: white;
+        font-size: 1rem;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    main .login-container {
+        height: 15rem;
+        width: 30rem;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+}
